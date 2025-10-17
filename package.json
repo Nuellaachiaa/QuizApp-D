@@ -2,7 +2,7 @@
   "name": "quiz-app-master-main",
   "version": "1.0.0",
   "scripts": {
-    "install-deps": "npm install --prefix FRONTEND",
+    "install-deps": "npm install --prefix BACKEND && npm install --prefix FRONTEND",
     "build": "npm run build:frontend",
     "build:frontend": "cd FRONTEND && npm run build",
     "start": "node BACKEND/app.js",
