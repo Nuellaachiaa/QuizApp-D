@@ -5,7 +5,7 @@
     "install-deps": "npm install --prefix BACKEND && npm install --prefix FRONTEND",
     "build": "npm run build:frontend",
     "build:frontend": "cd FRONTEND && npm run build",
-    "start": "node BACKEND/app.js",
+    "start": "cd BACKEND && node app.js",
     "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "start:backend": "cd BACKEND && node app.js",
     "start:frontend": "cd FRONTEND && npm start"
